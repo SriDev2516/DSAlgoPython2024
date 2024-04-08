@@ -7,6 +7,18 @@ To save space. It will be meaningless to create all elements of a diagonal matri
 Because most of the elements will be zero.
 """
 
+# Algorithm:
+"""
+The main idea behind diagonal matrix is, the matrix will have value
+ <=> row == col
+ 
+ Any diagonal matrix with m*n can be represented in a one-dimensional array
+ of length = m
+ 
+ so a 4*5 diagonal matrix will have 20 elements
+ then, it can be represented with a one-dimensional array of length = 4
+"""
+
 
 class DiagonalMatrix:
     def __init__(self, size):

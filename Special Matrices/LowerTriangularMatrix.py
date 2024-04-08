@@ -13,7 +13,6 @@ Size of the Linear array = n*(n+1)/2, where n is the size of the matrix
 """
 
 
-
 class Matrix:
     def __init__(self, n):
         self.A = [0] * n
@@ -46,7 +45,6 @@ class TriangularMatrixImplementation:
 customer_input = 56
 lower_triangle = TriangularMatrixImplementation(customer_input)
 
-
 i = 0
 while i < customer_input:
     j = 0
@@ -57,4 +55,3 @@ while i < customer_input:
     i += 1
 
 lower_triangle.display()
-
