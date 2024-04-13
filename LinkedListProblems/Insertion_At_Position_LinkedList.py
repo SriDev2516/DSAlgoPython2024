@@ -21,11 +21,21 @@ def insert_at_pos(head: Node, element: int, pos: int):
     current = head
     new_node = Node(element)
     for i in range(1, pos):
-        current = current.next
+        if current.next is not None:
+            current = current.next
+
+        else:
+            break
     new_node.next = current.next
     current.next = new_node
     display(head)
 
 
 linked_list = create([8, 3, 9, 7, 6])
-insert_at_pos(linked_list, 20, 4)
+insert_at_pos(linked_list, 20, 1)
+
+# Analysis:
+"""
+O(1) -> If inserted at position 1, i.e. after first element
+O(n) -> Insertion happens other than position 1
+"""
